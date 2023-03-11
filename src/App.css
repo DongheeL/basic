@@ -41,7 +41,7 @@
   width: 300px;
   text-align: center;
   padding: 1rem;
-  background-color: azure;
+  background-color: #f7f5eef2;
   border-radius: 20px;
   margin-bottom: 1rem;
   box-shadow: 11px 14px 27px -6px rgba(82,75,75,0.77);
@@ -53,4 +53,14 @@
   width: 200px;
   height: 200px;
   border-radius: 100%;
+}
+
+.new {
+  width: 50px;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 5px;
+  position: absolute;
+  margin-left: 200px;
+  background-color: aquamarine;
 }
