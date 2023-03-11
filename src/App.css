@@ -38,7 +38,7 @@
 }
 
 .profile {
-  position: relative;
+  
   width: 300px;
   text-align: center;
   padding: 1rem;
@@ -56,8 +56,16 @@
   border-radius: 100%;
 }
 
+/* new의 부모 컨테이너를 profile로 했었기 때문에 Avatar 컴포넌트만 그렸을 때 원하는대로 나타나지 않으므로, new의 부모 컨테이너를 avatar로 지정하고 Avatar 컴포넌트에 avatar를 클래스네임으로 하는 div를 만들어서 사진과 new의 위치가 항상 동일하도록 맞춰줌 */
+.avatar {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+}
+
 .new {
-  /* profile에 position: relative;를 줌으로써 new의 부모가 profile이 되도록 만듬 */
+  /* 부모 컨테이너로 지정할 클래스에 position: relative;를 줌으로써 new의 위치를 상대적으로 조정 */
   position: absolute;  
    /* left와 top은 부모 엘리먼트의 70%, 부모의 10%의 위치를 의미하게됨.*/
   left: 70%;
