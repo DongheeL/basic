@@ -1,53 +1,17 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.orange {
+  color: orange;
 }
 
 .profile {
-  
   width: 300px;
   text-align: center;
   padding: 1rem;
-  background-color: #f7f5eef2;
+  background-color: #ebebeb;
   border-radius: 20px;
+  box-shadow: 7px 5px 23px -9px rgba(0, 0, 0, 0.75);
   margin-bottom: 1rem;
-  box-shadow: 11px 14px 27px -6px rgba(82,75,75,0.77);
-  -webkit-box-shadow: 11px 14px 27px -6px rgba(82,75,75,0.77);
-  -moz-box-shadow: 11px 14px 27px -6px rgba(82,75,75,0.77);;
+  -webkit-box-shadow: 7px 5px 23px -9px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 7px 5px 23px -9px rgba(0, 0, 0, 0.75);
 }
 
 .photo {
@@ -56,7 +20,6 @@
   border-radius: 100%;
 }
 
-/* new의 부모 컨테이너를 profile로 했었기 때문에 Avatar 컴포넌트만 그렸을 때 원하는대로 나타나지 않으므로, new의 부모 컨테이너를 avatar로 지정하고 Avatar 컴포넌트에 avatar를 클래스네임으로 하는 div를 만들어서 사진과 new의 위치가 항상 동일하도록 맞춰줌 */
 .avatar {
   position: relative;
   width: 200px;
@@ -65,13 +28,60 @@
 }
 
 .new {
-  /* 부모 컨테이너로 지정할 클래스에 position: relative;를 줌으로써 new의 위치를 상대적으로 조정 */
-  position: absolute;  
-   /* left와 top은 부모 엘리먼트의 70%, 부모의 10%의 위치를 의미하게됨.*/
+  position: absolute;
   left: 70%;
   top: 10%;
   background-color: aquamarine;
   padding: 0.2rem 0.5rem;
   border-radius: 0.5rem;
+  text-transform: uppercase;
   font-weight: bold;
+}
+
+.container {
+  width: 500px;
+  margin: auto;
+}
+
+.banner {
+  text-align: center;
+  margin-top: 5rem;
+  font-size: 2rem;
+  background-color: gold;
+  font-weight: bold;
+}
+
+.counter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 2px solid rgb(215, 127, 12);
+}
+
+.counter:hover {
+  background-color: rgb(246, 243, 197);
+}
+
+.number {
+  font-size: 7rem;
+}
+
+.small {
+  font-size: 1rem;
+}
+
+.button {
+  font-size: 2rem;
+  padding: 0.2rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  background: rgb(215, 127, 12);
+  background: linear-gradient(
+    90deg,
+    rgba(215, 127, 12, 1) 0%,
+    rgba(253, 220, 29, 1) 100%
+  );
 }
